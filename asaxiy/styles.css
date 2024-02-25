@@ -1,22 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: blue;
+  /* position: fixed;
+  z-index: 1; */
+  /* background-color: blue; */
   width: 100%;
-  height: 140px;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-nav {
-  position: relative;
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+/* nav {
   height: 100px;
   width: 100%;
   display: flex;
+
+} */
+.right-container {
+  display: flex;
   align-items: center;
+  justify-content: right;
   gap: 10px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
+}
+.right-container .link {
+  height: 40px;
+  /* background-color: black; */
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.right-container .link img {
+  height: 25px;
+  width: 25px;
 }
 .bolimlar {
   display: flex;
@@ -56,4 +92,18 @@ nav {
 }
 .search button:hover {
   background-color: blue;
+}
+.tab-container {
+  /* position: fixed;
+  z-index: 1; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: pink; */
+}
+.content {
+  background-color: antiquewhite;
+  padding-top: 200px;
 }
